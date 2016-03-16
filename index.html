@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="build/css/vendor.css">
     <script src="build/js/vendor.min.js"></script>
-    <script type="text/javascript" src="build/js/app.js"></script>
+    <script type="text/javascript" src="js/alarmClock-interface.js"></script>
     <title>Title</title>
   </head>
   <body>
@@ -13,10 +13,23 @@
     <h3>Well look at the time! </h3>
     <h3 id="time"></h3>
 
-    <form class="setAlarm" action="index.html" method="post">
-      <label for="">Set a time for the alarm:</label>
-      <input class="timeInput" type="text" name="name" value="">
+    <h3>Set a time for the alarm:</h3>
+    <form class="setAlarm" >
+      <label>Hour (1-12)</label>
+      <input id="hour" type="number" maxlength="2" min="1" max="12" placeholder="1">
+      <label>Minute (0-59)</label>
+      <input id="minute" type="number" maxlength="2" min="00" max="59" placeholder="00">
+      <label>Second (0-59)</label>
+      <input id="second" type="number" maxlength="2" min="00" max="59" placeholder="00">
+      <label>AM/PM</label>
+      <select id="am-pm">
+        <option value="am">AM</option>
+        <option value="pm">PM</option>
+      </select>
       <button class="alarmer" type="button" name="button">Set Alarm</button>
     </form>
+    <div class="alarmAlert">
+
+    </div>
   </body>
 </html>
