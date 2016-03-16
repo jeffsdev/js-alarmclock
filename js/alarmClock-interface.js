@@ -52,6 +52,8 @@ $(document).ready(function(){
     // so that it can be compared with the current time string
     setAlarmTo = userHour + ":" + userMinute + ":" + userSecond + " " + userAMPM;
 
+    $('.alarmTime').html('<h3>Alarm set for: ' + setAlarmTo + '</h3>');
+
   });
 });
 
@@ -66,7 +68,7 @@ function update() {
   // if user's alarm time (string) === the current moment.js time (string)
   // then trigger the alarm
   if (setAlarmTo === b) {
-    $('.alarmAlert').html("<h1>BEEEEP!</h1>");
+    $('.alarmAlert').html("<h1>BEEEEEEEEEEP!</h1>");
   }
   // display current time on page
   return $('#time').html(timey);
