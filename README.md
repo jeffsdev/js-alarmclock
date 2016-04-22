@@ -5,9 +5,6 @@
 ### Description
 ##### This is a simple alarm clock built with JavaScript. 
 
-
-Note: Weather may not work on gh-pages properly, as API key is stored in a local .env file.
-
 #### Technologies Used
 
 HTML  
